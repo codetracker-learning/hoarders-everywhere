@@ -47,8 +47,9 @@
 * As a user, when I click a delete button on the My Stuff page, the item should be removed from firebase and I should no longer see it.
 * As a user, when I click a delete button on the Single Item page, the item should be removed from firebase and I should no longer see it, and I should be redirected to the My Stuff page.
 
-## Use this template
+---
 
+# Use this template
 This template includes all the dependencies and set up needed for you to work within defined code standards and structure to get you up and running quickly.
 
 ## Topics
