@@ -1,4 +1,53 @@
-# React Template
+# React Hoarder
+
+# React Hoarder
+> You are a hoarder. But not just any hoarder. You are an arrogant hoarder who wants to show off all of the stuff you hoard. You want an application that gives you a list of anything possible to hoard, and add them to your own personal collection as you acquire them.
+
+
+## Data
+[Use this JSON file to seed your "items" collection in Firebase.](./items.json)
+
+
+## Assignment Parts
+
+# React Hoarder Part 1: Authentication and Routing
+
+## User Stories - Authentication
+As a user, if I go to the application and I am not logged in, I should see a google authentication button.
+As a user, I should be able to authenticate via google.
+As a user, I should always see a navbar.
+As a user, when I am logged out, the navbar should only display the brand name.
+As a user, when I am logged in, the navbar should display links to home, My Stuff, New, and logout.
+As a user, when I click the logout button in the navbar I should be logged out and should see the google authentication button.
+
+## User Stories - Routing
+As a user if I click the home link in the navbar, I should navigate to '/home'  and see an h1 tag that says 'Home'.
+As a user if I click the New link in the navbar, I should navigate to '/new'  and see an h1 tag that says 'New Stuff'.
+As a user if I click the My Stuff link in the navbar, I should navigate to '/stuff'  and see an h1 tag that says 'My Stuff' and two buttons - on that says Edit and one that says Single.
+As a user when I click the Edit button on the My Stuff page I should be redirect to '/edit/12345' and I should see an h1 tag that says 'Edit';
+As a user when I click the Single button on the My Stuff page I should be redirect to '/stuff/12345' and I should see an h1 tag that says 'Single Stuff';
+
+# React Hoarder Part 2: CRUD on Items
+
+## User Stories
+
+### CREATE
+* As a user, when I click New in the navbar I should be taken to the '/stuff/new' page where I should see a form for adding new items.
+* As a user, when I add in details and hit save on the '/stuff/new' page my item should save to firebase and I should be redirected to '/stuff'.
+
+### READ
+* As a user, when I navigate to the /stuff route, I should see a "My Stuff" page. This page should have a list of all of the items I have hoarded.
+* As a user, when I click on an item on the My Item page, I should be taken to the Single Item page and see details for that item
+
+### UPDATE
+* As a user, when I click a update button on the My Stuff page, I should be redirected to the edit page and should see a form pre-populated with all the information for the item I am editing.  Once I make edits and push the save button, Firebase should edit and I should be redirected to the '/stuff' page.
+* As a user, when I click a update button on the Single Item page, I should be redirected to the edit page and should see a form pre-populated with all the information for the item I am editing.  Once I make edits and push the save button, Firebase should edit and I should be redirected to the '/stuff' page.
+
+### DELETE
+* As a user, when I click a delete button on the My Stuff page, the item should be removed from firebase and I should no longer see it.
+* As a user, when I click a delete button on the Single Item page, the item should be removed from firebase and I should no longer see it, and I should be redirected to the My Stuff page.
+
+
 [![Netlify Status](https://api.netlify.com/api/v1/badges/339c4ae9-fc7f-41b4-9b49-2dab0a20eaba/deploy-status)](https://app.netlify.com/sites/react-template-21/deploys)
 
 [See Live Demo of this Template](https://react-template-21.netlify.app/)
